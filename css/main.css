@@ -1,0 +1,607 @@
+
+        body {
+            background-color: #efefef;
+            margin: 0;
+            font-family:  'Rubik', sans-serif;
+        }
+		
+		@font-face {
+            font-family: 'andi';
+            src: url('andi.otf') format('truetype');
+			} 
+        
+       .container {
+            width: 99%;
+            
+            margin: 0 auto;
+            position: relative; /* Added */
+			
+        }
+        .container-Text{
+		      width: 80%;
+            margin: 0 auto;
+            position: relative; /* Added */
+			padding-top: 30px;
+			 font-size: 17px;
+			}
+		 .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+			width: 70%; 
+			
+			}	
+        
+        .navbar {
+    
+	width: 97%;
+    position: fixed;
+    background:#ff4d4d;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17px;
+    z-index: 999;
+    transition: all 0.3s ease; /* Add a smooth transition effect for size changes */
+        }
+		
+		.navbar.minimized {
+    height: 60px; /* Adjust the height for the minimized version */
+}
+        .navbar b{
+            font-family: 'andi', sans-serif;
+            font-size: 25px;
+		    color: white;
+		}
+        .logo a {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }	
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hatdog {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content-creator {
+            margin: 20px 0;
+            padding: 20px;
+            
+             font-size: 15px;
+            border-radius: 10px;
+            position: absolute; /* Added */
+            top: 50%; /* Added */
+            right: 0; /* Added */
+            width: 60%; /* Added */
+            box-sizing: border-box; /* Added */
+            z-index: 1; /* Added */ 
+			
+			
+        }
+         
+		 . top-heading {
+           
+			margin-top: 50px;
+            padding: 50px;
+            background-color: white;
+            
+            border-radius: 50px;
+            position: absolute; /* Added */
+            top: 90%; /* Added */
+            left: 0; /* Added */
+            width: 50%; /* Added */
+            box-sizing: border-box; /* Added */
+            z-index: 1; /* Added */ 
+			
+			}
+		.top-heading h1 {
+           color: black;
+		  
+		   
+         }
+         h2, h3, h4 {
+         color: black;
+         margin: 7px;
+         }
+		 a{
+          text-decoration: none;
+		  color: inherit;
+		 } 		 
+		  
+		 
+        .content-creator p {
+           font-family: 'Rubik', sans-serif;
+           font-size: 17px;
+           color: black;
+          line-height: 1.5;
+        }
+		.content-creator  {
+           font-family: 'Rubik', sans-serif; 
+           font-size: 20px;
+           color: black;
+           line-height: 1.5;
+        }
+		
+		
+		
+		
+		 .contentor {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            width: 40%;
+            box-sizing: border-box;
+        }
+
+        .new-image {
+           position: relative;
+          float: right;
+          margin: 0 auto;
+          padding-top: 100px;
+          background-color: white;
+          width: 55%;
+          height: 55%;   
+          transition: transform 0.3s ease;
+          overflow: hidden;
+        }
+
+        .new-image img {
+           width: 100%;
+           height: auto;
+        }
+
+        .hover-text {
+          position: absolute;
+          bottom: 40px;
+          left: 50%;
+          background-color: rgba(0, 0, 0, 0.03); 
+	      transition: transform 0.3s ease;
+          text-align: center;
+          opacity: 0;
+	      transition: opacity 0.3s ease;
+            font-size: 20px;
+            color: white; /* Text color */
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 
+                 0 0 20px rgba(0, 0, 0, 0.8), 
+                 0 0 30px rgba(0, 0, 0, 0.8); /* Text shadow with black color */
+        }
+
+        .new-image:hover .hover-text {
+          opacity: 1;
+         }
+        .new-image:hover img {
+          transform: scale(1.1); }  
+   
+        
+        .image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 70%;
+    position: relative; /* Added position relative */
+}
+
+.image-container img {
+    box-sizing: border-box;
+    width: 100%; /* Make the image take 100% width of its parent */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: absolute; /* Position the image relative to the .image-container */
+    top: 0;
+    left: 0;
+}
+
+
+           
+			
+        
+          .navbar a {
+            font-size: 1.1em;
+            color: white;
+            text-decoration: none;
+            padding: 6px 20px;
+            transition: 0.5s;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            color: white;
+        }
+
+        .navbar a span {
+            position: absolute;
+            top: 100%; 
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: black;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+        }
+
+        .navbar a:hover span {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .new-text{
+            float: left;
+			margin:  0px;
+            padding: 0px;
+           
+            height: 80%;
+			width: 43%;
+           
+			 font-family: 'Rubik', sans-serif; 
+            font-size: 17px;
+            color: black;
+            line-height: 1.5; 
+     }  
+	    .page-wrapper{
+			min-height: 100%;
+		    border-bottom: 20px solid black; /* Add a gray border at the bottom of the page-wrapper */
+             padding-bottom: 20px; /* Optional: Add some padding between the border and the content */
+		}
+	 
+	 	 .page-wrapper a:hover{
+		 color:#ff4d4d;;
+		 
+	 } 
+	 
+	 
+	 
+   .post-slider {
+	margin-top: 50px;
+   } 
+   
+    .post-slider .slider-title{
+    text-align: center; 
+	margin: 30px auto;
+	}
+	.post-slider .next{
+	Position: absolute;
+	margin-top: 150px;
+	right: 30px;
+	font-size: 2em;
+	color: black; 
+	cursor: pointer; 
+	}
+	.post-slider .prev{
+	Position: absolute;
+	margin-top: 150px;
+	left: 30px;
+	font-size: 2em;
+	color: black; 
+	cursor: pointer; 
+	}	
+   .post-slider .post-wrapper{
+	width: 84%;
+	height: 350px;
+	margin: 0px auto; 
+	overflow: hidden;
+	padding: 10px 0px 10px 0px;
+
+    padding-bottom: 20px;
+	
+	
+   } 
+   
+   .post-slider .post-wrapper .post{ 
+   width: 300px;
+   height: 330px;
+   margin: 0px 10px;
+   display: inline-block;
+   background: white;
+   border-radius: 5px;
+   box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+   } 
+   .post-slider .post-wrapper .post .post-info { 
+    height: 130px;
+	
+	padding: 0px 5px;
+   }
+   
+   
+   
+   .post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+   }	 
+   
+   
+     .swiper {
+     
+    position: relative;
+	margin-top: 0px;	
+    width: 85%;  
+    height: 10%;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+    transition: all 0.8s ease; /* optional: smooth transition for hover effect */
+}
+
+.swiper:hover {
+    transform: scale(1.1); /* example: increase size by 10% on hover */
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%; /* use 100% to take full width of the parent container */
+    height: 100%; /* use 100% to take full height of the parent container */
+     position: relative;
+}
+
+.swiper-slide img {
+    margin-top: 100px;
+    display: block;
+    width: 100%; /* use 100% to take full width of the parent container */
+   
+    color: black;
+    transition: opacity 0.3s ease;
+    height: 600px; /* fixed height for the image */
+}
+.text-overlay {
+    
+    justify-content: center;
+	margin-top: 600px;
+	align-items: center;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.swiper-slide:hover .text-overlay {
+    opacity: 1;
+    position: absolute;
+
+ }
+
+ .sports {
+    display: flex;
+    position: relative;
+    left: 50px;
+    height: 1vh;
+}
+
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.content {
+    width: 80%;
+    margin: 30px auto;
+  
+}
+
+.content .main-content {
+    width: 70%;
+    float: left;
+    
+}
+
+.content .main-content .post {
+    width: 95%;
+    height: 270px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background: white;
+	position: relative; 
+}
+.content .main-content .post .read-more { 
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+   
+    background: transparent; /* Corrected typo here */
+    border-radius: 0px;
+    color:#ff4d4d; 
+}
+
+  .content .main-content .post .btn.read-more:hover { 
+    background-color: #ff4d4d;
+	color: white;
+	transition: 0.25s;
+  }
+    
+	
+  
+  
+.content .main-content .post .post-image {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.content .main-content .post .post-preview {
+	width: 59%;
+	padding: .0rem;
+	float: right;
+	font-size: 11.5px;
+	
+}
+	
+
+
+.content .main-content .recent-post-title {
+    margin: 20px;
+}
+
+.content .sidebar {
+    width: 30%;
+    float: right;
+    
+    height: 300px;
+}
+
+.btn-big{
+	padding: .7rem 1.3rem;
+	line-height: 1.3rem;
+}
+
+.btn{
+  padding: .5rem 1rem;
+  background:#ff4d4d;
+  color: white; 
+  border: 1px solid black;
+  border-radius: .25rem;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  right: 20px;
+}
+
+.topnav .search-icon {
+  display: block;
+  position: relative;
+}
+
+.topnav .search-icon input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 100px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 300px; /* Initially set the input field width to 0 */
+  transition: width 0.3s ease; /* Add a smooth transition effect */
+}
+
+.topnav .search-icon: input[type=text] {
+  width: 150px; /* Adjust the width of the input field on hover */
+  border: 1px solid #ccc; /* Add border to the input field when expanded */
+}
+
+
+
+.footer{
+	top: 80%;
+	background: #303036;
+	color: #d3d3d3;
+	height: 400px;
+	Position: relative;
+}
+.footer .footer-content{
+   
+	height: 350px;
+	display: flex 
+}
+.footer .footer-content .footer-section {
+	flex: 1;
+	padding: 25px;
+	
+} 
+.logo-text{
+	font-size: 35px;
+	  font-family: 'andi', sans-serif;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+color: white;	
+}
+.footer .footer-content about h1 span{
+	color: orange;
+  
+}
+.footer .footer-content .about .contact span{
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+.footer .footer-content .about .socials a{
+	border: 1px solid gray;
+	width: 45px;
+	height: 35px;
+	padding-top: 10px;
+	margin-right: 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.5em;
+	border-radius: 5px;
+	
+}
+.footer .footer-content .about .socials a:hover{
+border: 1px solid white;
+color: white;	
+}
+.footer .footer-content .contact-form .contact-input {
+	height: 50px;
+	width: 80%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background: #272727;
+	color: #bebdbd;
+	margin-bottom: 10px;
+	line-height: 2.5rem;
+	padding: .5rem 1.5rem;
+	
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+	
+	background: #lalala;
+}
+.footer .footer-content .contact-form .contact-btn{
+	float: left;
+}
+.footer .footer-bottom {
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	Position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+} 
+
+
+.element {
+  width: 100%;
+  height: 100px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #d9d9d9;
+  margin-top: 50px; /* Adds space from the top of 20px */
+}
